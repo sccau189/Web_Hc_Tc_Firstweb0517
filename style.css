@@ -57,7 +57,7 @@ nav{
 /* hover 滑入 */
 
 #nav a:hover{
-    color: slategrey;
+    color: darkred;
     font-size: 23px;
 }
 
