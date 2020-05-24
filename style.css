@@ -40,13 +40,14 @@ nav{
     /* 對齊項目(平行) */
     text-align: center;
 
+
     
 }
 
 #nav a{
     /* 文字裝飾:底線 刪除線 */
     text-decoration: none;
-    color: maroon;
+    color: white;
     font-size: 20px;
     /* 轉場:時間 */
     transform: 0.9s;
@@ -65,10 +66,117 @@ nav{
     /* 背景圖片 */
     background-image: url(./img/noodles.jpg);
     /* 背景大小:填滿 */
-    block-size: cover;
+    background-size: cover;
 
     background-position: center;
     /* 100vh 指的是跟螢幕一樣高 100% v h */
     height: 100vh;
+
+    display: grid;
+    
+    color: white;
+
+    align-items: center;
+
+    background-repeat: no-repeat;
 }
 
+#banner div{
+    width: 1000px;
+    margin: 0 auto;
+
+}
+
+#banner div h1,#banner div h4{
+    font-family: Ngaan;
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+#banner div h1{
+    font-size: 120px;
+    text-align: center;
+}
+
+#banner div h4{
+    font-size: 60px;
+    text-align: left;
+}
+
+/* section */
+section{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#about div {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-gap: 20px;
+
+}
+
+#about > div .img{
+    background-image: url(./img/about.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+#about > div p{
+    line-height: 2;
+    letter-spacing: 5px;
+    padding-right: 20px;
+
+}
+
+section h1{
+    font-family: Ngaan;
+    margin-top: 60px;
+    font-size: 32px;
+
+}
+
+section hr{
+    margin-bottom: 40px;
+
+}
+
+/* 最新消息 */
+
+#news ul{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    /* 清單樣式:無 */
+    list-style:  none;
+}
+
+#news ul span{
+    color: gray;
+    padding: 10px 0;
+}
+
+#news ul li{
+    font-size: 24px;
+    padding: 10px 0;
+}
+
+#news div{
+    text-align: right;
+}
+
+#news a {
+    text-align: none;
+    color: black;
+
+}
+
+/* 聯絡我們 */
+
+#content p {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 2.5;
+    font-size: 25px;
+}
